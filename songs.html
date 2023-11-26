@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Songs</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <style>
+        /* Your existing styles remain unchanged */
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #c62828;
+            color: #fff;
+            padding: 1em 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header h1,
+        header img {
+            display: inline-block; /* Make the title and logo display in a line */
+            vertical-align: left; /* Align them vertically in the middle */
+        }
+
+        header img {
+            max-width: 80px;
+            margin-right: 40px;
+        }
+
+        header nav {
+            display: flex;
+        }
+
+        header a {
+            text-decoration: none;
+        }
+
+        header button {
+            background-color: rgb(27, 27, 27);
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        main {
+            flex: 1;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #c62828;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+
+        .song-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .song-item {
+            margin-bottom: 20px;
+        }
+
+        .download-button {
+            background-color: rgb(27, 27, 27);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .lyrics-link {
+            color: #c62828; /* Change color to fit the theme */
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Christmas Wonderland</h1>
+        <img src="https://i.ibb.co/vwXQbx0/Screenshot-2023-11-23-171502.png" alt="Logo">
+        <nav>
+            <a href="christmas.html"><button>Home</button></a>
+            <a href="coming_soon.html"><button>About</button></a>
+            <a href="coming_soon.html"><button>Τραγούδια</button></a>
+            <a href="coming_soon.html"><button>Έθιμα</button></a>
+        </nav>
+    </header>
+
+    <main>
+        <ul class="song-list">
+            <li class="song-item">
+                <h2>Τρίγωνα Κάλαντα</h2>
+                <audio class="audio-player" controls>
+                    <source src="jingle_bells.mp3" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+                <a class="lyrics-link" href="#" onclick="showLyrics('jingle_bells_lyrics.html')">View Lyrics</a>
+            </li>
+
+            <li class="song-item">
+                <h2>Rockin' Around the Christmas Tree</h2>
+                <audio class="audio-player" controls>
+                    <source src="Rockin' Around The Christmas Tree.mp3" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+                <a class="lyrics-link" href="#" onclick="showLyrics('silent_night_lyrics.html')">View Lyrics</a>
+            </li>
+
+            <li class="song-item">
+                <h2>The Christmas Song</h2>
+                <audio class="audio-player" controls>
+                    <source src="The Christmas Song (Merry Christmas To You).mp3" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+                <a class="lyrics-link" href="#" onclick="showLyrics('thechristmas.html')">View Lyrics</a>
+            </li>
+
+            <li class="song-item">
+                <h2>Let It Snow! Let It Snow! Let It Snow!</h2>
+                <audio class="audio-player" controls>
+                    <source src="Let It Snow! Let It Snow! Let It Snow!.mp3" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+                <a class="lyrics-link" href="#" onclick="showLyrics('snow.html')">View Lyrics</a>
+            </li>
+
+            <li class="song-item">
+                <h2>White Christmas - 1947 Version</h2>
+                <audio class="audio-player" controls>
+                    <source src="White Christmas - 1947 Version.mp3" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+                <a class="lyrics-link" href="#" onclick="showLyrics('white.html')">View Lyrics</a>
+            </li>
+
+            <li class="song-item">
+                <h2>Feliz Navidad</h2>
+                <audio class="audio-player" controls>
+                    <source src="Feliz Navidad.mp3" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+                <a class="lyrics-link" href="#" onclick="showLyrics('feliz.html')">View Lyrics</a>
+            </li>
+
+            <li class="song-item">
+                <h2>A Holly Jolly Christmas</h2>
+                <audio class="audio-player" controls>
+                    <source src="A Holly Jolly Christmas.mp3" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+                <a class="lyrics-link" href="#" onclick="showLyrics('jolly.html')">View Lyrics</a>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Christmas Wonderland. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showLyrics(lyricsURL) {
+            window.open(lyricsURL, 'Lyrics', 'width=600,height=400');
+        }
+    </script>
+</body>
+
+</html>
