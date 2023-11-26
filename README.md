@@ -6,8 +6,6 @@ Welcome to Christmas Wonderland, your one-stop destination for all things Christ
 - [About](#about)
 - [Features](#features)
 - [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## About
 
@@ -18,13 +16,13 @@ Christmas Wonderland is a festive website that celebrates the joy and magic of C
 ### 1. Christmas Songs
 Explore a curated collection of timeless Christmas songs. From jolly classics to heartwarming melodies, get ready to fill your home with the sweet sounds of the season.
 
-### 2. Holiday Traditions
+### 2. Holiday Traditions [COMING SOON!]
 Discover and learn about various Christmas traditions from around the world. From decorating the tree to festive feasts, explore the rich tapestry of holiday customs.
 
-### 3. Festive Decorations
+### 3. Festive Decorations [COMING SOON!]
 Get inspired by creative and festive decoration ideas for your home. Whether you prefer a traditional look or a modern twist, find the perfect inspiration for your Christmas decor.
 
-### 4. Santa's Workshop
+### 4. Santa's Workshop [COMING SOON!]
 Step into Santa's workshop and enjoy fun activities and crafts for the whole family. From DIY ornaments to printable coloring pages, there's something for everyone.
 
 ## Getting Started
